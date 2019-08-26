@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G9B-ER-wBl">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Collection View Controller-->
+        <scene sceneID="T45-fu-zPg">
+            <objects>
+                <collectionViewController id="G9B-ER-wBl" customClass="PhotoCollectionViewController" customModule="CustomFlowLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="AdD-gj-zO8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewLayout key="collectionViewLayout" id="xoK-eZ-ldy" customClass="PinterestLayout" customModule="CustomFlowLayout" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Dhi-cl-pr9" customClass="PhotoCollectionViewCell" customModule="CustomFlowLayout" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="272" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="269"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CsM-Ht-WhX">
+                                            <rect key="frame" x="8" y="28" width="256" height="233"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EI1-4w-NrS">
+                                                    <rect key="frame" x="8" y="38" width="240" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="EI1-4w-NrS" firstAttribute="centerY" secondItem="CsM-Ht-WhX" secondAttribute="centerY" id="t3e-kP-ezb"/>
+                                                <constraint firstItem="EI1-4w-NrS" firstAttribute="centerX" secondItem="CsM-Ht-WhX" secondAttribute="centerX" id="ufl-rw-9Tn"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="CsM-Ht-WhX" firstAttribute="leading" secondItem="Dhi-cl-pr9" secondAttribute="leadingMargin" id="E0k-Qw-8AI"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="CsM-Ht-WhX" secondAttribute="bottom" id="Gns-HG-auB"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="CsM-Ht-WhX" secondAttribute="trailing" id="HHa-L5-f9s"/>
+                                    <constraint firstItem="CsM-Ht-WhX" firstAttribute="top" secondItem="Dhi-cl-pr9" secondAttribute="topMargin" id="W6x-jf-2BX"/>
+                                </constraints>
+                                <size key="customSize" width="272" height="269"/>
+                                <connections>
+                                    <outlet property="containView" destination="CsM-Ht-WhX" id="FcO-fZ-DAF"/>
+                                    <outlet property="imgPhoto" destination="EI1-4w-NrS" id="PiV-5e-LRj"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="G9B-ER-wBl" id="eAf-1L-O7Q"/>
+                            <outlet property="delegate" destination="G9B-ER-wBl" id="KVj-JN-UQ5"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGA-OY-l95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.6875" y="11.71875"/>
+        </scene>
+    </scenes>
+</document>

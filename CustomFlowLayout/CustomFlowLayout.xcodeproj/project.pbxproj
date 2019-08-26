@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		800B5C6C230EA43000FE6320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B5C6B230EA43000FE6320 /* AppDelegate.swift */; };
-		800B5C6E230EA43000FE6320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B5C6D230EA43000FE6320 /* ViewController.swift */; };
+		800B5C6E230EA43000FE6320 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B5C6D230EA43000FE6320 /* PhotoCollectionViewController.swift */; };
 		800B5C71230EA43000FE6320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800B5C6F230EA43000FE6320 /* Main.storyboard */; };
 		800B5C73230EA43400FE6320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800B5C72230EA43400FE6320 /* Assets.xcassets */; };
 		800B5C76230EA43400FE6320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800B5C74230EA43400FE6320 /* LaunchScreen.storyboard */; };
+		80225939230F985700F5AF31 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80225938230F985700F5AF31 /* PinterestLayout.swift */; };
+		8022593B230FCBB900F5AF31 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022593A230FCBB900F5AF31 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		800B5C68230EA43000FE6320 /* CustomFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		800B5C6B230EA43000FE6320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		800B5C6D230EA43000FE6320 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		800B5C6D230EA43000FE6320 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		800B5C70230EA43000FE6320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		800B5C72230EA43400FE6320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		800B5C75230EA43400FE6320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		800B5C77230EA43400FE6320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80225938230F985700F5AF31 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		8022593A230FCBB900F5AF31 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				800B5C6A230EA43000FE6320 /* CustomFlowLayout */,
-				800B5C69230EA43000FE6320 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,19 +52,63 @@
 				800B5C68230EA43000FE6320 /* CustomFlowLayout.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		800B5C6A230EA43000FE6320 /* CustomFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				80225994230FFA1A00F5AF31 /* Extensions */,
+				8022593E230FCE7300F5AF31 /* Resources */,
+				8022593D230FCE5400F5AF31 /* Views */,
+				8022593C230FCE4500F5AF31 /* Controller */,
+				80225937230F982F00F5AF31 /* Layout */,
+				800B5C69230EA43000FE6320 /* Products */,
+			);
+			path = CustomFlowLayout;
+			sourceTree = "<group>";
+		};
+		80225937230F982F00F5AF31 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				80225938230F985700F5AF31 /* PinterestLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		8022593C230FCE4500F5AF31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				800B5C6D230EA43000FE6320 /* PhotoCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8022593D230FCE5400F5AF31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8022593A230FCBB900F5AF31 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8022593E230FCE7300F5AF31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				800B5C6B230EA43000FE6320 /* AppDelegate.swift */,
-				800B5C6D230EA43000FE6320 /* ViewController.swift */,
 				800B5C6F230EA43000FE6320 /* Main.storyboard */,
 				800B5C72230EA43400FE6320 /* Assets.xcassets */,
 				800B5C74230EA43400FE6320 /* LaunchScreen.storyboard */,
 				800B5C77230EA43400FE6320 /* Info.plist */,
 			);
-			path = CustomFlowLayout;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80225994230FFA1A00F5AF31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				800B5C6E230EA43000FE6320 /* ViewController.swift in Sources */,
+				80225939230F985700F5AF31 /* PinterestLayout.swift in Sources */,
+				8022593B230FCBB900F5AF31 /* PhotoCollectionViewCell.swift in Sources */,
+				800B5C6E230EA43000FE6320 /* PhotoCollectionViewController.swift in Sources */,
 				800B5C6C230EA43000FE6320 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CustomFlowLayout/Info.plist;
+				INFOPLIST_FILE = CustomFlowLayout/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CustomFlowLayout/Info.plist;
+				INFOPLIST_FILE = CustomFlowLayout/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
